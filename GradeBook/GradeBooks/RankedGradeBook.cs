@@ -26,7 +26,7 @@ namespace GradeBook.GradeBooks
                 return 'C';
             else if (grades[(threshold * 4) - 1] <= averageGrade)
                 return 'D';
-            return base.GetLetterGrade(averageGrade);
+            return 'F';
         }
     }
 }
