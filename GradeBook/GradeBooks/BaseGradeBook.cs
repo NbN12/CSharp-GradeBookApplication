@@ -113,14 +113,34 @@ namespace GradeBook.GradeBooks
             switch (letterGrade)
             {
                 case 'A':
+                    if (IsWeighted)
+                    {
+                        return 5;
+                    }
                     return 4;
                 case 'B':
+                    if (IsWeighted)
+                    {
+                        return 4;
+                    }
                     return 3;
                 case 'C':
+                    if (IsWeighted)
+                    {
+                        return 3;
+                    }
                     return 2;
                 case 'D':
+                    if (IsWeighted)
+                    {
+                        return 2;
+                    }
                     return 1;
                 case 'F':
+                    if (IsWeighted)
+                    {
+                        return 1;
+                    }
                     return 0;
             }
             return 0;
